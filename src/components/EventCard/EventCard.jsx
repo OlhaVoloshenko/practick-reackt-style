@@ -6,6 +6,7 @@ import {
   FaClock,
 } from 'react-icons/fa';
 import { formatEventStart, formatEventDuration } from 'utils';
+import { iconSize } from 'constans';
 import style from './EventCard.module.css';
 
 export const EventCard = ({ name, location, speaker, type, start, end }) => {
@@ -15,7 +16,7 @@ export const EventCard = ({ name, location, speaker, type, start, end }) => {
     <div className={style.event}>
       <h2 className={style.title}>{name}</h2>
       <p className={style.info}>
-        <FaMapMarkerAlt className={style.icon} size={16} />
+        <FaMapMarkerAlt className={style.icon} size={iconSize.sm} />
         {location}
       </p>
       <p className={style.info}>
