@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/practick-reackt-style/static/css/main.a6905626.css",
-    "main.js": "/practick-reackt-style/static/js/main.70584270.js",
+    "main.js": "/practick-reackt-style/static/js/main.4a8bbb1c.js",
     "index.html": "/practick-reackt-style/index.html",
     "main.a6905626.css.map": "/practick-reackt-style/static/css/main.a6905626.css.map",
-    "main.70584270.js.map": "/practick-reackt-style/static/js/main.70584270.js.map"
+    "main.4a8bbb1c.js.map": "/practick-reackt-style/static/js/main.4a8bbb1c.js.map"
   },
   "entrypoints": [
     "static/css/main.a6905626.css",
-    "static/js/main.70584270.js"
+    "static/js/main.4a8bbb1c.js"
   ]
 }
