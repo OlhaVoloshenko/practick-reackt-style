@@ -1,5 +1,11 @@
-import css from './EventBoard.module.css';
+import style from './EventBoard.module.css';
 
-export const EventBoard = events => {
-  return <div className={css.eventBoard}>Event cards</div>;
+export const EventBoard = ({ events }) => {
+  return (
+    <div className={style.eventBoard}>
+      {events.map(event => (
+        <div key={event.name}>{event.name}</div>
+      ))}
+    </div>
+  );
 };
