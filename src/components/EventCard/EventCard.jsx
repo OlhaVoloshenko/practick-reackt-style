@@ -8,13 +8,14 @@ import {
 import { formatEventStart, formatEventDuration } from 'utils';
 import { iconSize } from 'constans';
 import style from './EventCard.module.css';
+import { Card, EventName } from './EventCard.styled';
 
 export const EventCard = ({ name, location, speaker, type, start, end }) => {
   const formatedStart = formatEventStart(start);
   const duration = formatEventDuration(start, end);
   return (
-    <div className={style.event}>
-      <h2 className={style.title}>{name}</h2>
+    <Card>
+      <EventName>{name}</EventName>
       <p className={style.info}>
         <FaMapMarkerAlt className={style.icon} size={iconSize.sm} />
         {location}
@@ -31,10 +32,8 @@ export const EventCard = ({ name, location, speaker, type, start, end }) => {
         <FaClock className={style.icon} size={16} />
         {duration}
       </p>
-      {/* <span className="chip free|paid|vip">{type}</span>*/}
-
       <span className={`${style.chip} ${style[type]}`}>{type}</span>
-    </div>
+    </Card>
   );
 };
 
