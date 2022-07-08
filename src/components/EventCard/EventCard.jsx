@@ -6,7 +6,7 @@ import {
   FaClock,
 } from 'react-icons/fa';
 import { formatEventStart, formatEventDuration } from 'utils';
-import { iconSize } from 'constans';
+import { iconSize } from '../../constans';
 import { Card, EventName, Info, Chip } from './EventCard.styled';
 
 export const EventCard = ({ name, location, speaker, type, start, end }) => {
@@ -36,7 +36,7 @@ export const EventCard = ({ name, location, speaker, type, start, end }) => {
     </Card>
   );
 };
-//className={`${style.chip} ${style[type]}`}
+
 EventCard.propTypes = {
   name: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,

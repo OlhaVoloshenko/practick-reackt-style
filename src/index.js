@@ -5,17 +5,19 @@ import { App } from 'components/App/App';
 import './index.css';
 import { theme } from './constans';
 
-/*ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
-);*/
+);
 
-ReactDOM.render(
+/*ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={{ theme }}>
+    <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
-);
+);*/

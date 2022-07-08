@@ -8,4 +8,5 @@ export const theme = Object.freeze({
     primaryText: '#212121',
     secondaryText: '#757575',
   },
+  spacing: value => `${4 * value}px`,
 });
